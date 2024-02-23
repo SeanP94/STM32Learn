@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <regex.h>
 
 static char * const DATA_TEXT = "../srcfiles/data.txt";
 
@@ -14,6 +14,7 @@ void inputRow(char* row) {
     fclose(fp);
 }
 
+/* function to print the append file.*/
 void printRows() {
     FILE *fp;
     int BUFFER_MAX = 255;
@@ -28,9 +29,10 @@ void printRows() {
 }
 
 int main() {
-    char *x = "Henry is an idiot.\n";
-    
+    char *x = "Henry is a guy on a podcast.\n";
+    getenv("ASD");
     inputRow(x);
     printRows();
+    
     return EXIT_SUCCESS;
 }
