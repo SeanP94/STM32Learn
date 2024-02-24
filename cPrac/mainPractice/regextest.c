@@ -8,7 +8,6 @@
 
 int re_match(char * str);
 char* re_find(char * str);
-char* re_findall(char * str);
 
 
 
@@ -24,6 +23,7 @@ void print_result(int return_value){
   }
 }
 
+char* re_findall(regex_t* regex, char* strToCheck, size_t max_matches);
 
 
 int main() {
@@ -36,7 +36,6 @@ int main() {
     char *re_pattern = "[a-zA-Z ]+,";
     size_t max_groups = 5;
     size_t max_matches = 100;
-    
     
     
     
