@@ -12,3 +12,7 @@ static int __init ModuleInit(void) {
 static void __exit ModuleExit(void) {
     printk("Goodbye Kernel!\n");
 }
+
+
+module_init(ModuleInit);
+module_exit(ModuleExit);

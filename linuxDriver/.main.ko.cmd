@@ -1,0 +1,1 @@
+cmd_/home/krayt/relearning_C/linuxDriver/main.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /home/krayt/relearning_C/linuxDriver/main.ko /home/krayt/relearning_C/linuxDriver/main.o /home/krayt/relearning_C/linuxDriver/main.mod.o;  true

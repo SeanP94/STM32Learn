@@ -1,0 +1,1 @@
+cmd_/home/krayt/relearning_C/linuxDriver/Module.symvers :=  sed 's/ko$$/o/'  /home/krayt/relearning_C/linuxDriver/modules.order | scripts/mod/modpost -m -a    -o /home/krayt/relearning_C/linuxDriver/Module.symvers -e -i Module.symvers -T - 
